@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(rgba(255,255,255,.55), rgba(235,247,255,.7)),
+    url("./fundo-byd.jpg") center / cover no-repeat fixed;
+}
+.container {
+  width: min(920px, 92%);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+h1 {
+  margin-bottom: 5px;
+  text-align: center;
+  color: #075985;
+  font-size: 42px;
+}
+
+.subtitulo {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #42657a;
+  font-size: 18px;
+}
+
+.card {
+  margin-bottom: 24px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 10px 30px rgba(0, 60, 100, 0.18);
+  backdrop-filter: blur(8px);
+}
+
+h2 {
+  margin-top: 0;
+  color: #075985;
+}
+
+input,
+select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 14px;
+  border: 1px solid #b8d5e5;
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+button {
+  width: 100%;
+  margin-top: 14px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #087ea4, #075985);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #064e70;
+}
+
+.escondido {
+  display: none;
+}
+
+#listaPendencias {
+  margin-top: 15px;
+}
+
+.pendencia {
+  margin: 12px 0;
+  padding: 15px;
+  border-left: 5px solid #0ea5e9;
+  border-radius: 10px;
+  background: rgba(240, 249, 255, 0.9);
+}
+
+.check {
+  display: block;
+  margin-top: 18px;
+}
+
+.check input {
+  width: auto;
+  margin-right: 8px;
+}
+
+#mensagem {
+  text-align: center;
+  font-weight: bold;
+  color: #075985;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .container {
+    padding: 25px 0;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

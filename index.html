@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turno Conectado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <h1>Turno Conectado</h1>
+    <p class="subtitulo">Registro e passagem de turno</p>
+
+    <!-- RECEBER TURNO -->
+    <section class="card">
+      <h2>Receber turno</h2>
+
+      <input
+        id="nomeRecebedor"
+        type="text"
+        placeholder="Nome de quem está recebendo"
+      >
+
+      <select id="turnoRecebido">
+        <option value="">Selecione o turno recebido</option>
+        <option value="1º turno">1º turno</option>
+        <option value="2º turno">2º turno</option>
+        <option value="3º turno">3º turno</option>
+      </select>
+
+      <button onclick="mostrarPendencias()">
+        Ver pendências do turno anterior
+      </button>
+
+      <div id="areaPendencias" class="escondido">
+        <h3>Pendências anteriores</h3>
+
+        <div id="listaPendencias">
+          As pendências aparecerão aqui.
+        </div>
+
+        <label class="check">
+          <input type="checkbox" id="confirmacaoRecebimento">
+          Confirmo que recebi as informações do turno
+        </label>
+
+        <button onclick="confirmarRecebimento()">
+          Confirmar recebimento
+        </button>
+      </div>
+    </section>
+
+    <!-- ENTREGAR TURNO -->
+    <section class="card">
+      <h2>Entregar turno</h2>
+
+      <input
+        id="nomeEntregador"
+        type="text"
+        placeholder="Nome de quem está entregando"
+      >
+
+      <select id="turnoEntregue">
+        <option value="">Selecione o turno entregue</option>
+        <option value="1º turno">1º turno</option>
+        <option value="2º turno">2º turno</option>
+        <option value="3º turno">3º turno</option>
+      </select>
+
+     
+      <button onclick="salvarProblema()">
+        Registrar pendência
+      </button>
+    </section>
+
+    <p id="mensagem"></p>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
